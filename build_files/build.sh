@@ -2,6 +2,9 @@
 
 set -ouex pipefail
 
+### Remove base packages
+rpm-ostree override remove ptyxis
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
