@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 ### Remove base packages
-rpm-ostree override remove ptyxis waydroid 
+rpm-ostree override remove ptyxis
 
 ### Install packages
 
