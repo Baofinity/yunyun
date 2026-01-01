@@ -22,6 +22,9 @@ dnf5 install -y kitty
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
+dnf5 -y copr enable lizardbyte/beta
+dnf5 -y install Sunshine
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
