@@ -1,0 +1,7 @@
+system:
+  install:
+    - org.kde.audiotube
+    - com.obsproject.Studio
+    - com.discordapp.Discord
+#  remove:
+#    - org.gnome.Evince
