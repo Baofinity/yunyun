@@ -9,5 +9,5 @@ assume_yes = true
 no_retry = false
 
 [linux]
-rpm_ostree = false
 bootc = true
+rpm_ostree = false
