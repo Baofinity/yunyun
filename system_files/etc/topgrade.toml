@@ -8,6 +8,12 @@ ignore_failures = ["flatpak", "brew_cask", "brew_formula", "firmware", "custom_c
 assume_yes = true
 no_retry = false
 
-[linux]
-bootc = true
-rpm_ostree = false
+#[linux]
+#bootc = true
+#rpm_ostree = false
+
+[bootc]
+enabled = true
+
+[rpm_ostree]
+enabled = false
