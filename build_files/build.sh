@@ -37,4 +37,4 @@ grep -qxF 'eval "$(starship init bash)"' /etc/bashrc || \
   echo 'eval "$(starship init bash)"' >> /etc/bashrc
 
 # Topgrade
-topgrade --config /etc/topgrade.toml
+topgrade -n --config /etc/topgrade.toml
