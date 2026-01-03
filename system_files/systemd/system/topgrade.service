@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Topgrade updates
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+Environment=TOPGRADE_NONINTERACTIVE=1
+ExecStart=/usr/bin/topgrade --config /etc/topgrade.toml --non-interactive
+Nice=10
+TimeoutStartSec=600

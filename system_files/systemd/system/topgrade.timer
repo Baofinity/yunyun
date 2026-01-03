@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Topgrade daily
+
+[Timer]
+OnBootSec=5m
+OnUnitActiveSec=1d
+Persistent=true
+RandomizedDelaySec=30m
+
+[Install]
+WantedBy=timers.target

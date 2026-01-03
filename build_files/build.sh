@@ -31,10 +31,8 @@ dnf5 -y install starship
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl enable topgrade.timer
 
 # Bashrc
 grep -qxF 'eval "$(starship init bash)"' /etc/bashrc || \
   echo 'eval "$(starship init bash)"' >> /etc/bashrc
-
-# Topgrade
-TOPGRADE_NONINTERACTIVE=1 topgrade --config /etc/topgrade.toml
