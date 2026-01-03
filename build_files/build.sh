@@ -13,7 +13,7 @@ rpm-ostree override remove ptyxis
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y kitty 
+dnf5 install -y kitty
 
 # Use a COPR Example:
 #
@@ -25,6 +25,13 @@ dnf5 install -y kitty
 dnf5 -y copr enable lizardbyte/beta
 dnf5 -y install Sunshine
 
+dnf5 -y copr enable atim/starship
+dnf5 -y install starship
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+
+# Bashrc
+grep -qxF 'eval "$(starship init bash)"' /etc/bashrc || \
+  echo 'eval "$(starship init bash)"' >> /etc/bashrc
